@@ -157,7 +157,9 @@ module.exports.updateProduct = async function (req, res) {
       productGroupCate: req.body.productGroupCate,
       productType: req.body.productType,
       productDes: req.body.productDes,
-      productSpec: JSON.parse(JSON.stringify(req.body.productSpec)),
+      productSpec:
+        req?.body?.productSpec &&
+        JSON.parse(JSON.stringify(req.body.productSpec)),
     };
 
     console.log(req.body.productDes);
