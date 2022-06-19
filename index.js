@@ -28,8 +28,8 @@ var supportRoutes = require("./routes/support");
 
 mongoose
   .connect(
-    // "mongodb+srv://pvpha:pvpha@cluster.b8oxn.mongodb.net/ecommerce",
-    "mongodb+srv://lqkhanh:lqkhanh@cluster.fcaom.mongodb.net/ecommerce?retryWrites=true&w=majority",
+    "mongodb+srv://pvpha:pvpha@cluster.b8oxn.mongodb.net/ecommerce?retryWrites=true&w=majority",
+    // "mongodb+srv://lqkhanh:lqkhanh@cluster.fcaom.mongodb.net/ecommerce?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
